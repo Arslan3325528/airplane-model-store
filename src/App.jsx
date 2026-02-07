@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+import Section from './components/Section';
 
+//? Paintings
+import PaintingList from './components/PaintingList';
+import paintings from './json/paintings.json';
+
+
+//? Planes
+import PlanesList from './components/PlanesList';
+import planes from './json/planes.json';
+
+
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      {/* //? Paintings */}
+      <Section title="Колекція картин">
+        <PaintingList items={paintings} />
+      </Section >
 
-export default App
+      {/* //? Planes */}
+      <Section title="Колекція моделей літаків">
+        <PlanesList items={planes} />
+      </Section >
+    </div>
+  );
+};
