@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Planes from './Planes';
 
-//!💚-var.1 Для відображення локальних зображень з http://localhost:5173/airplane-model-store/ та https://arslan3325528.github.io/airplane-model-store/
+//!💚-var.3 Для відображення локальних зображень з http://localhost:5173/airplane-model-store/ та https://arslan3325528.github.io/airplane-model-store/
 // import planes from '../json/planes.json';
 // import img0 from '../images/planes-actual/a-10.jpg';
 // import img1 from '../images/planes-actual/b-2-comp.jpg';
@@ -11,7 +11,7 @@ import Planes from './Planes';
 // for (let i = 0; i < planes.length; i++) {
 //     planes[i].url.actual = images[i];
 // };
-//!💚-var.1 ___________________________________________________________________________________________________________________________________________
+//!💚-var.3 ___________________________________________________________________________________________________________________________________________
 
 
 function PlanesList({ items }) {
@@ -22,7 +22,7 @@ function PlanesList({ items }) {
                     <Planes
                         urlMain={item.url.main}
                         urlPromotional={item.url.promotional}
-                        urlActual={item.url.actual} //!💚
+                        urlActual={item.url.actual} 
                         nameBrief={item.name.brief}
                         nameFull={item.name.full}
                         nickname={item.name.nickname}
