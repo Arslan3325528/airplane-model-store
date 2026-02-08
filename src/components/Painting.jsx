@@ -12,7 +12,7 @@ export default function Painting({
 })
 {
   return (
-    <div className="Card-painting">
+    <>
       <img src={url} alt={title} width="480" />
       <h3>{title}</h3>
       <p>Автор: <a href={profileUrl}>{author}</a></p>
@@ -20,7 +20,7 @@ export default function Painting({
       {/* <p>Доступність: закінчується чи є у наявності</p> */}
       <p>Доступність: {quantity < 10 ? "закінчується" : "є у наявності"}</p>
       <button type="button">Додати до кошику</button>
-    </div>
+    </>
   );
 };
 
@@ -34,5 +34,3 @@ Painting.propTypes = {
   // price: PropTypes.string.isRequired, //! контроль propTypes
   quantity: PropTypes.number.isRequired,
 };
-
-// export default Painting;

@@ -17,7 +17,7 @@ export default function Planes({
 })
 {
   return (
-    <div className="Card-planes">
+    <>
       <h3>{nameBrief}</h3>
       <img src={urlMain} alt={nameBrief} width="400" />
       <p>Повна назва: {nameFull}</p>
@@ -33,7 +33,7 @@ export default function Planes({
       <img src={urlActual} alt={nameBrief} width="600" />
       <br />
       <button type="button">Додати до кошику</button>
-    </div>
+    </>
   );
 };
 

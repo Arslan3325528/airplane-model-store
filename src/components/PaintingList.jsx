@@ -4,9 +4,9 @@ import Painting from "./Painting";
 
 function PaintingList({ items }) {
     return (
-        <ul>
+        <ul className="Card-painting-list">
             {items.map(item =>
-                <li key={item.id}>
+                <li key={item.id} className="Card-painting">
                     <Painting
                         url={item.url}
                         title={item.title}

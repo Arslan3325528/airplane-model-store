@@ -17,9 +17,9 @@ for (let i = 0; i < planes.length; i++) {
 
 function PlanesList({ items }) {
     return (
-        <ul>
+        <ul className="Card-planes-list">
             {items.map(item =>
-                <li key={item.id}>
+                <li key={item.id} className="Card-planes">
                     <Planes
                         urlMain={item.url.main}
                         urlPromotional={item.url.promotional}

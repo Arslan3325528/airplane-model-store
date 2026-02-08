@@ -14,7 +14,7 @@ import planes from './json/planes.json';
 
 export default function App() {
   return (
-    <div>
+    <>
       {/* //? Paintings */}
       <Section title="Колекція картин">
         <PaintingList items={paintings} />
@@ -24,6 +24,6 @@ export default function App() {
       <Section title="Колекція моделей літаків">
         <PlanesList items={planes} />
       </Section >
-    </div>
+    </>
   );
 };
