@@ -3,7 +3,7 @@ import Planes from './Planes';
 import planes from '../json/planes.json';
 
 
-//!💚 Для відображення локальних зображень з http://localhost:3001/react-course/ та https://arslan3325528.github.io/react-course/
+//!💚 Для відображення локальних зображень з http://localhost:5173/airplane-model-store/ та https://arslan3325528.github.io/airplane-model-store/
 import img0 from '../images/planes-actual/a-10.jpg';
 import img1 from '../images/planes-actual/b-2-comp.jpg';
 import img2 from '../images/planes-actual/f-22-comp.jpg';
