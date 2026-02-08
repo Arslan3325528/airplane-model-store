@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import defaultImage from "./default.jpg" //! Дефолтне зображення
+import defaultImage from "./default.jpg"; //! Дефолтне зображення
 
 
 export default function Planes({
